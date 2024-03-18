@@ -5,7 +5,10 @@
   "[cpp]": {
     "editor.formatOnSave": true
   },
-  "C_Cpp.default.compileCommands": "${workspaceFolder}/src/build/compile_commands.json",
   "cmake.configureOnOpen": true,
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "clangd.arguments": [
+    "--compile-commands-dir=${workspaceFolder}/src/build",
+    "--header-insertion=never"
+  ]
 }

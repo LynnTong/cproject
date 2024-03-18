@@ -28,6 +28,7 @@ RUN apt-get install -y --no-install-recommends \
     ruby \
     gcovr \
     wget \
+    clangd \
     && rm -rf /var/lib/apt/lists/*
 
 ENV LANG='en_US.UTF-8' LANGUAGE='en_US:en' LC_ALL='en_US.UTF-8'
